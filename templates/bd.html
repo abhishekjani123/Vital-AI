@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{% endblock title %}
+
+{% block css %}
+{% endblock css %}
+
+{% block body %}
+<br>
+<br>
+<br>
+<br>
+<table class="table">
+    <thead class="table-light">
+        <tr>
+            <th scope="col">PID</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>>
+            <th scope="col">Email</th>
+            <th scope="col">Gender</th>
+            <th scope="col">Age</th>
+            <th scope="col">Disease</th>
+            <th scope="col">Medical History</th>
+            {% if current_user.email == "admin@gmail.com"%}
+            <th scope="col">Edit</th>
+            <th scope="col">Delete</th>
+            {% endif %}
+
+        </tr>
+    </thead>
+    <tbody>
+    {% for post in query %}
+        <tr>
+            <th scope="row">{{post.pid}}</th>
+            <td>{{post.fname}}</td>
+            <td>{{post.Lname}}</td>
+            <td>{{post.email}}</td>
+            <td>{{post.gender}}</td>
+            <td>{{post.age}}</td>
+            <td>{{post.disease}}</td>
+            <td>{{post.history}}</td>
+            {% if current_user.email == "admin@gmail.com"%}
+            <td><a href="/edit/{{post.pid}}"><button class="btn btn-primary">Edit </button></a></td>
+            <td><a href="/delete/{{post.pid}}"><button onclick="return confirm('Are you sure to Delete Data');" class="btn btn-danger">Delete </button></a></td>
+            {% endif %}
+        </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+{% endblock body %}
