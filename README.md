@@ -1,6 +1,8 @@
 # Vital-AI
 
-The Purpose of creating this project is to create a Clinic Management Environment alongside with features like Disease Prediction which is beneficiary for doctors to give fast diagnosis and record management for the clinics. The Purpose to make the record management work for the Clinics Easy and also appointment booking helps to maintain order in the clinics thus people do not need to wait for long to get treatment. Digital Human Feature also creates virtual receptionists which 
+The Purpose of creating this project is to create a Clinic Management Environment alongside with features like Disease Prediction which is beneficiary for doctors to give fast diagnosis and record management for the clinics. 
+
+This project makes the record management work for the Clinics Easy and also appointment booking helps to maintain order in the clinics thus people do not need to wait for long to get treatment. Digital Human Feature also creates virtual receptionists which 
 can be used for Patient Appeal towards the Clinic.
 
 
